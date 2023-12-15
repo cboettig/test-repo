@@ -1,0 +1,17 @@
+Package: mytest
+Title: netrctest
+Version: 0.0.1
+Authors@R: 
+  person(given = "Carl", family = "Boettiger", , "cboettig@gmail.com", c("aut", "cre", "cph"),
+         comment = c(ORCID = "0000-0002-1642-628X"))
+Description: TEST
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3
+Suggests: 
+    knitr,
+    rmarkdown,
+    terra (>= 1.7.39),
+    testthat (>= 3.0.0),
+    curl

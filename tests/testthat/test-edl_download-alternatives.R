@@ -21,6 +21,7 @@ test_that("test", {
 
   dest <- tempfile(fileext = ".tif")
   
+
   h <- curl::new_handle(netrc = TRUE,
                         netrc_file = netrc_file,
                         cookiefile = cookie_file,

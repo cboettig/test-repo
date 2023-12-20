@@ -1,0 +1,34 @@
+---
+title: "tmap"
+format: html
+editor: visual
+---
+
+## tmap
+
+
+```{r}
+library(tmap)
+data(World, rivers)
+```
+
+The code below generates output as a static png:
+
+```{r}
+map <- tm_shape(World) +
+    tm_fill() +
+    tm_shape(rivers) +
+    tm_lines(col="black", lwd="scalerank", scale=2, legend.lwd.show = FALSE) +
+    tm_style("cobalt", title = "Rivers of the World") +
+    tm_format("World")
+
+map
+```
+
+We can render the same
+
+```{r}
+tmap_mode("view")
+map
+```
+

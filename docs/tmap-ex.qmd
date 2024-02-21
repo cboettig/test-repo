@@ -6,10 +6,14 @@ editor: visual
 
 ## tmap
 
+```{r message=FALSE}
+library(tmap)
+
+data(World, rivers)
+```
 
 ```{r}
-library(tmap)
-data(World, rivers)
+packageVersion("tmap")
 ```
 
 The code below generates output as a static png:
@@ -31,4 +35,3 @@ We can render the same
 tmap_mode("view")
 map
 ```
-
